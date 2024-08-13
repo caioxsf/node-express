@@ -8,5 +8,7 @@ let ctrl = new HomeController();
 
 // ctrl.home está pegando dentro da classe HomeControler a funcao home
 router.get("/", ctrl.home);
+router.get("/cadastro", ctrl.cadastro);
+router.post("/cadastro", ctrl.cadastroUser);
 
 module.exports = router;
